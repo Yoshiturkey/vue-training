@@ -1,18 +1,27 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <app-heading :scale="1">大見出し</app-heading>
+    <app-heading :scale="2">中見出し</app-heading>
+    <app-heading :scale="3">小見出し</app-heading>
   </div>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import AppHeading from "@/components/AppHeading";
 export default {
   name: "Home",
   components: {
-    HelloWorld
-  }
+    AppHeading,
+  },
 };
 </script>
+<style>
+.heading1 {
+  color: #dc001a;
+}
+.heading2 {
+  color: blue;
+}
+.heading3 {
+  color: green;
+}
+</style>
